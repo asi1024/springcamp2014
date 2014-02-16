@@ -1,0 +1,70 @@
+
+\subsection{フィボナッチヒープ}
+\frame{
+  \frametitle{フィボナッチヒープ}
+  \begin{block}{Binomial Tree}
+    全順序集合$P(C,\leq)$について，$C$上からなる要素のフィボナッチヒープは\\
+    以下の操作が実行できる
+    \itemize{
+    \item top : $O(1)$でヒープの最大値を求める
+    \item merge : $O(1)$で2つのヒープを併合する
+    \item push : $O(1)$で$C$の要素$x$を追加する
+    \item pop : $O(\log N)$でヒープの最大値をもつ要素を削除する
+    \item size : $O(1)$でヒープの要素数を求める\\
+    }
+    いいね
+  \end{block}
+}
+
+\frame{
+  \begin{block}{2項木}
+    $B_0$は1個の頂点から構成される．
+    $B_k$は2つの$B_{k-1}$から構成され，
+    片方の根がもう一方の根の最も左の子になるように連結される．
+  \end{block}
+  \begin{exampleblock}{例}
+    \center{
+      \includegraphics[width=10cm]{image/binomial01.eps}
+    }
+  \end{exampleblock}
+}
+
+\frame{
+  \begin{block}{2項木}
+    各接点は，親を指すポインタ，最も左の子を指すポインタ，\\
+    直接右の兄弟を指すポインタを含んでいる．
+  \end{block}
+  \begin{exampleblock}{例}
+    \center{
+      \includegraphics<1>[width=10cm]{image/binomial02.eps}
+      \includegraphics<2>[width=3.4cm]{image/binomial03.eps}
+    }
+  \end{exampleblock}
+}
+
+\frame{
+  \only<1,2>{
+    \begin{block}{2項ヒープ}
+      2項ヒープは2項木を小さい順に左から並べた集合として\\
+      表現される．
+    \end{block}
+  }
+  \only<3>{
+    \frametitle{top}
+    \begin{block}{top}
+      各2項木の根の中で最大値を探す．$O(\log N)$
+    \end{block}
+  }
+  \begin{exampleblock}{例}
+    \center{
+      \includegraphics<1>[width=7cm]{image/binomial04.eps}
+      \includegraphics<2,3>[width=7cm]{image/binomial05.eps}
+    }
+  \end{exampleblock}
+}
+
+%\subsection{AVL木}
+%\subsection{Union-Find Tree}
+%\subsection{Segment Tree}
+%\subsection{Fenwick Tree}
+%\subsection{Wavelet Tree}
