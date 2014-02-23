@@ -32,7 +32,8 @@
 *.tdo
 
 *.DS_Store
-*.pdf
+main.pdf
 *.bmp
 *.eps
+*.png
 TODO.txt
