@@ -16,3 +16,18 @@
     様々なアルゴリズムに応用できる！！
   \end{alertblock}
 }
+
+\frame{
+  \frametitle{ナイーブな実装}
+  \begin{block}{リストによる実装}
+    \only<2->{前もって最大値を計算しておけば?}
+    \itemize{
+    \item push : O(1)で$C$の要素$x$を追加する
+    \item pop : O(n)でヒープの最大値をもつ要素を削除する
+    \only<1>{\item top : O(n)でヒープの最大値を求める\\}
+    \only<2->{\item top : O(1)でヒープの最大値を求める\\}
+    }
+  \end{block}
+  \only<3->{こんなもん使えるか！！}　\\
+  \only<4>{ここで，人類は「ヒープ」を発明したのだ}　\\
+}
