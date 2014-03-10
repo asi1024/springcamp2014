@@ -33,7 +33,6 @@
 
 *.DS_Store
 test.tex
-main.pdf
 test.pdf
 *.bmp
 *.eps
